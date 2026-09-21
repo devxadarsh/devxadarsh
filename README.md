@@ -1,7 +1,7 @@
 - 👋 Hi, I’m Adarsh (@devxadarsh)
-- 👀 I’m interested in Spring Boot and Devops
+- 👀 I’m interested in Anglar, Spring Boot, Vert.x and Devops
 - 🌱 I’m currently learning Devops
-- 💞️ I’m looking to collaborate on java 
+- 💞️ I’m looking to collaborate on java and Angular
 - 📫 How to reach me: devxadarsh@gamil.com
 - 😄 Pronouns: Dev
 - ⚡ Fun fact: I am learner
