@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Adarsh Pandey — Software Engineer</title>
+  <desc id="desc">A dark futuristic banner with animated cyan and blue geometric accents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="0.55" stop-color="#0b1730"/>
+      <stop offset="1" stop-color="#10112b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.52" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="48%" r="52%">
+      <stop offset="0" stop-color="#2563eb" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#67e8f9" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#93c5fd" stroke-opacity=".075" stroke-width="1"/>
+    </pattern>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="round"><rect width="1200" height="340" rx="22"/></clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <rect width="1200" height="340" fill="url(#grid)">
+      <animate attributeName="opacity" values="1;.55;1" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <rect width="1200" height="340" fill="url(#glow)">
+      <animate attributeName="opacity" values="1;.55;1" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Slow light sweep -->
+    <rect x="-420" y="0" width="420" height="340" fill="url(#sweep)">
+      <animate attributeName="x" values="-420;1200" dur="7.5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Abstract orbital geometry, slowly rotating -->
+    <g fill="none" stroke="url(#accent)" opacity=".62">
+      <animateTransform attributeName="transform" type="rotate" from="0 1000 164" to="360 1000 164" dur="32s" repeatCount="indefinite"/>
+      <circle cx="1000" cy="164" r="104" stroke-width="1.5"/>
+      <circle cx="1000" cy="164" r="137" stroke-width="1" stroke-dasharray="4 11"/>
+      <ellipse cx="1000" cy="164" rx="184" ry="70" stroke-width="1.2" transform="rotate(-28 1000 164)"/>
+      <ellipse cx="1000" cy="164" rx="184" ry="70" stroke-width="1.2" transform="rotate(54 1000 164)"/>
+      <path d="M803 164h394M1000 -20v370" stroke-opacity=".28" stroke-dasharray="3 8"/>
+    </g>
+
+    <!-- Pulsing particles -->
+    <g fill="#67e8f9" filter="url(#softGlow)">
+      <circle cx="1000" cy="27" r="4">
+        <animate attributeName="r" values="3;5.5;3" dur="2.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;.5;1" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1184" cy="164" r="3.5">
+        <animate attributeName="r" values="2.5;4.5;2.5" dur="3.4s" begin=".4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;.45;1" dur="3.4s" begin=".4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="912" cy="269" r="3">
+        <animate attributeName="r" values="2;4;2" dur="4s" begin=".8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;.4;1" dur="4s" begin=".8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Drifting data particles -->
+    <g fill="#60a5fa">
+      <circle cx="640" cy="300" r="1.6" opacity=".55">
+        <animate attributeName="cy" values="320;40" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;.7;0" dur="9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="760" cy="300" r="1.2" opacity=".45">
+        <animate attributeName="cy" values="320;60" dur="12s" begin="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;.6;0" dur="12s" begin="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="700" cy="300" r="1.4" opacity=".5">
+        <animate attributeName="cy" values="320;80" dur="10.5s" begin="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;.65;0" dur="10.5s" begin="4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Animated accent underline -->
+    <path d="M72 58h54" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-dasharray="54" stroke-dashoffset="54">
+      <animate attributeName="stroke-dashoffset" values="54;0" dur="1.2s" fill="freeze"/>
+    </path>
+    <text x="72" y="95" fill="#67e8f9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="4">DEVXADARSH / PROFILE</text>
+    <text x="68" y="177" fill="#f8fafc" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="54" font-weight="750" letter-spacing="1">ADARSH PANDEY</text>
+    <text x="72" y="222" fill="#cbd5e1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="21" font-weight="500" letter-spacing="2.2">SOFTWARE ENGINEER</text>
+    <text x="72" y="272" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="1.8">JAVA  /  ANGULAR  /  BACKEND SYSTEMS</text>
+    <path d="M72 302h360" stroke="url(#accent)" stroke-width="2" stroke-linecap="round" opacity=".75">
+      <animate attributeName="opacity" values=".75;.35;.75" dur="4s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Terminal cursor -->
+    <text x="72" y="326" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2.3">BUILD • LEARN • SHIP</text>
+    <rect x="238" y="317" width="7" height="11" fill="#67e8f9">
+      <animate attributeName="opacity" values=".9;0;.9" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="230" viewBox="0 0 620 230" role="img" aria-labelledby="overviewtitle">
+  <title id="overviewtitle">GITHUB OVERVIEW — LIVE SNAPSHOT · PUBLIC DATA</title>
+  <defs>
+    <linearGradient id="overviewbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060b16"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="overviewaccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset=".55" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="overviewarea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="overviewgrid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" fill="none" stroke="#93c5fd" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+    <filter id="overviewglow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="overviewclip"><rect width="620" height="230" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#overviewclip)">
+    <rect width="620" height="230" fill="url(#overviewbg)"/>
+    <rect width="620" height="230" fill="url(#overviewgrid)">
+      <animate attributeName="opacity" values="1;.55;1" dur="9s" repeatCount="indefinite"/>
+    </rect>
+    <rect y="0" width="620" height="2" fill="url(#overviewaccent)">
+      <animate attributeName="opacity" values=".55;1;.55" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x=".5" y=".5" width="619" height="229" rx="20" fill="none" stroke="#1e293b"/>
+    <text x="24" y="32" fill="#67e8f9" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="2.6">GITHUB OVERVIEW</text>
+    <text x="24" y="50" fill="#7c8ba1" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="1.4">LIVE SNAPSHOT · PUBLIC DATA</text>
+    
+    
+    <circle cx="31" cy="74" r="2" fill="#22d3ee">
+      <animate attributeName="opacity" values=".35;1;.35" dur="2.8s" begin="0.1s" repeatCount="indefinite"/>
+    </circle>
+    <text x="40" y="78" fill="#7c8ba1" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="1.6">REPOSITORIES</text>
+    <text x="28" y="112" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">4<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.000;0.167;1" dur="1.3s" begin="0.25s" fill="freeze"/></text><text x="28" y="112" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">8<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.167;0.333;1" dur="1.3s" begin="0.25s" fill="freeze"/></text><text x="28" y="112" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">12<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.333;0.500;1" dur="1.3s" begin="0.25s" fill="freeze"/></text><text x="28" y="112" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">15<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.500;0.667;1" dur="1.3s" begin="0.25s" fill="freeze"/></text><text x="28" y="112" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">19<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.667;0.833;1" dur="1.3s" begin="0.25s" fill="freeze"/></text><text x="28" y="112" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">23<animate attributeName="opacity" values="0;1;1" keyTimes="0;0.833;1" dur="1.3s" begin="0.25s" fill="freeze"/></text>
+    <rect x="28" y="122" width="0" height="2" rx="1" fill="url(#overviewaccent)">
+      <animate attributeName="width" from="0" to="62" dur="1s" begin="0.30000000000000004s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="333" cy="74" r="2" fill="#22d3ee">
+      <animate attributeName="opacity" values=".35;1;.35" dur="2.8s" begin="0.25s" repeatCount="indefinite"/>
+    </circle>
+    <text x="342" y="78" fill="#7c8ba1" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="1.6">STARS EARNED</text>
+    <text x="330" y="112" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">0<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.000;0.167;1" dur="1.3s" begin="0.4s" fill="freeze"/></text><text x="330" y="112" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">0<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.167;0.333;1" dur="1.3s" begin="0.4s" fill="freeze"/></text><text x="330" y="112" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">0<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.333;0.500;1" dur="1.3s" begin="0.4s" fill="freeze"/></text><text x="330" y="112" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">0<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.500;0.667;1" dur="1.3s" begin="0.4s" fill="freeze"/></text><text x="330" y="112" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">0<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.667;0.833;1" dur="1.3s" begin="0.4s" fill="freeze"/></text><text x="330" y="112" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">0<animate attributeName="opacity" values="0;1;1" keyTimes="0;0.833;1" dur="1.3s" begin="0.4s" fill="freeze"/></text>
+    <rect x="330" y="122" width="0" height="2" rx="1" fill="url(#overviewaccent)">
+      <animate attributeName="width" from="0" to="50" dur="1s" begin="0.45s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="31" cy="150" r="2" fill="#22d3ee">
+      <animate attributeName="opacity" values=".35;1;.35" dur="2.8s" begin="0.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="40" y="154" fill="#7c8ba1" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="1.6">FOLLOWERS</text>
+    <text x="28" y="188" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">0<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.000;0.167;1" dur="1.3s" begin="0.55s" fill="freeze"/></text><text x="28" y="188" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">0<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.167;0.333;1" dur="1.3s" begin="0.55s" fill="freeze"/></text><text x="28" y="188" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">0<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.333;0.500;1" dur="1.3s" begin="0.55s" fill="freeze"/></text><text x="28" y="188" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">0<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.500;0.667;1" dur="1.3s" begin="0.55s" fill="freeze"/></text><text x="28" y="188" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">0<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.667;0.833;1" dur="1.3s" begin="0.55s" fill="freeze"/></text><text x="28" y="188" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">0<animate attributeName="opacity" values="0;1;1" keyTimes="0;0.833;1" dur="1.3s" begin="0.55s" fill="freeze"/></text>
+    <rect x="28" y="198" width="0" height="2" rx="1" fill="url(#overviewaccent)">
+      <animate attributeName="width" from="0" to="50" dur="1s" begin="0.6000000000000001s" fill="freeze"/>
+    </rect>
+    
+    <circle cx="333" cy="150" r="2" fill="#22d3ee">
+      <animate attributeName="opacity" values=".35;1;.35" dur="2.8s" begin="0.55s" repeatCount="indefinite"/>
+    </circle>
+    <text x="342" y="154" fill="#7c8ba1" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="1.6">CONTRIBUTIONS</text>
+    <text x="330" y="188" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">13<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.000;0.167;1" dur="1.3s" begin="0.7000000000000001s" fill="freeze"/></text><text x="330" y="188" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">25<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.167;0.333;1" dur="1.3s" begin="0.7000000000000001s" fill="freeze"/></text><text x="330" y="188" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">38<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.333;0.500;1" dur="1.3s" begin="0.7000000000000001s" fill="freeze"/></text><text x="330" y="188" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">50<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.500;0.667;1" dur="1.3s" begin="0.7000000000000001s" fill="freeze"/></text><text x="330" y="188" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">63<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.667;0.833;1" dur="1.3s" begin="0.7000000000000001s" fill="freeze"/></text><text x="330" y="188" fill="#e2e8f0" font-family="Inter, ui-sans-serif, system-ui, -apple-system, sans-serif" font-size="30" font-weight="750" opacity="0">75<animate attributeName="opacity" values="0;1;1" keyTimes="0;0.833;1" dur="1.3s" begin="0.7000000000000001s" fill="freeze"/></text>
+    <rect x="330" y="198" width="0" height="2" rx="1" fill="url(#overviewaccent)">
+      <animate attributeName="width" from="0" to="62" dur="1s" begin="0.75s" fill="freeze"/>
+    </rect>
+    <g transform="translate(520 92)" opacity=".5">
+      <circle r="52" fill="none" stroke="#1e293b" stroke-width="1"/>
+      <circle r="52" fill="none" stroke="#22d3ee" stroke-width="1.4" stroke-dasharray="34 260" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="34" fill="none" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="6 10" opacity=".7">
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="20s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="4" fill="#67e8f9" filter="url(#overviewglow)">
+        <animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <text x="24" y="217" fill="#44546b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8.5" letter-spacing="1.6">AUTO-GENERATED · 2026-11-08</text>
+    <circle cx="596" cy="213" r="2" fill="#22d3ee">
+      <animate attributeName="opacity" values="1;.25;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

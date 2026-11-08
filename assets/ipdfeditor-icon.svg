@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Border Ring Gradient -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- Document Body Gradient -->
+    <linearGradient id="docGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+
+    <!-- Folded Corner Flap Gradient -->
+    <linearGradient id="flapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#93c5fd" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+
+    <!-- Accent Pen/Edit Gradient -->
+    <linearGradient id="penGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Squircle Container -->
+  <rect x="16" y="16" width="480" height="480" rx="112" ry="112" fill="url(#bgGrad)" stroke="url(#ringGrad)" stroke-width="8" />
+
+  <!-- Ambient Glow Behind Document -->
+  <circle cx="256" cy="256" r="140" fill="#38bdf8" opacity="0.18" filter="url(#glow)" />
+
+  <!-- Main PDF Document Body (with folded corner cutout) -->
+  <!-- Document bounds: x: 120 -> 360 (w=240), y: 96 -> 416 (h=320). Fold cut at x=280, y=96 to x=360, y=176 -->
+  <g filter="url(#dropShadow)">
+    <!-- Document Page with Top-Right Fold Cutout -->
+    <path d="M 152 96
+             L 280 96
+             L 360 176
+             L 360 384
+             A 32 32 0 0 1 328 416
+             L 152 416
+             A 32 32 0 0 1 120 384
+             L 120 128
+             A 32 32 0 0 1 152 96 Z"
+          fill="url(#docGrad)" />
+
+    <!-- Folded Corner Shadow Triangle -->
+    <path d="M 280 96
+             L 280 176
+             L 360 176 Z"
+          fill="#0f172a"
+          opacity="0.35" />
+
+    <!-- Folded Corner Flap Triangle -->
+    <path d="M 280 96
+             L 280 160
+             A 16 16 0 0 0 296 176
+             L 360 176 Z"
+          fill="url(#flapGrad)" />
+
+    <!-- Document Accent Horizontal Lines (Content structure) -->
+    <rect x="164" y="168" width="80" height="14" rx="7" fill="#93c5fd" opacity="0.85" />
+    <rect x="164" y="206" width="152" height="14" rx="7" fill="#ffffff" opacity="0.9" />
+    <rect x="164" y="244" width="112" height="14" rx="7" fill="#93c5fd" opacity="0.85" />
+
+    <!-- Distinctive "i" Brand Emblem -->
+    <!-- Dot of the "i" -->
+    <circle cx="204" cy="316" r="14" fill="#38bdf8" filter="url(#glow)" />
+    <!-- Stem of the "i" -->
+    <rect x="194" y="342" width="20" height="42" rx="10" fill="#ffffff" />
+
+    <!-- Stylized Modern Edit Pen / Stylus (Intersecting across bottom-right) -->
+    <g transform="translate(250, 270) rotate(-45)">
+      <!-- Pen Body -->
+      <rect x="0" y="0" width="36" height="110" rx="8" fill="url(#penGrad)" stroke="#ffffff" stroke-width="4" filter="url(#dropShadow)" />
+      <!-- Pen Band -->
+      <rect x="0" y="30" width="36" height="12" fill="#ffffff" opacity="0.9" />
+      <!-- Pen Tip Triangle -->
+      <path d="M 0 110 L 18 142 L 36 110 Z" fill="#ffffff" />
+      <!-- Nib Point (glowing cyan) -->
+      <circle cx="18" cy="136" r="4" fill="#06b6d4" />
+    </g>
+  </g>
+</svg>
