@@ -221,13 +221,17 @@ stored in the cloud.
 ## <img src="./assets/icons/chart-simple.svg" width="22" height="22" alt="" /> GitHub analytics
 
 <p align="center">
-  <img src="./assets/analytics/overview.svg" width="49%" alt="GitHub overview — repositories, stars, followers, contributions" />
-  <img src="./assets/analytics/languages.svg" width="49%" alt="Top languages by bytes" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=devxadarsh&theme=tokyonight" alt="Live contribution activity and profile details" width="100%" />
 </p>
 
 <p align="center">
-  <img src="./assets/analytics/activity.svg" width="49%" alt="Contribution activity heatmap" />
-  <img src="./assets/analytics/streak.svg" width="49%" alt="Contribution streak and 26-week trend" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=devxadarsh&theme=tokyonight" alt="Live GitHub stats" width="49%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=devxadarsh&theme=tokyonight&hide_border=true" alt="Live GitHub streak" width="49%" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=devxadarsh&theme=tokyonight" alt="Live top languages" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=devxadarsh&theme=tokyonight&utcOffset=5.5" alt="Live productive time" width="49%" />
 </p>
 
 <p align="center">
